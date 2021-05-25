@@ -1,3 +1,4 @@
+pipeline {
 node("linux"){
     stages {
         stage('Checkout external proj') {
@@ -14,4 +15,5 @@ node("linux"){
             }
         }
     }
+}
 }
