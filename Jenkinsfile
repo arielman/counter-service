@@ -1,5 +1,5 @@
 pipeline {
-node("linux"){
+agent("linux"){
     stages {
         stage('Checkout external proj') {
             steps {
