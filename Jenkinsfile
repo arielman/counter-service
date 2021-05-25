@@ -11,7 +11,7 @@ pipeline {
             }
             stage('Docker build') {
                 steps {
-                    sh 'sudo docker build . -t arielma2304/my-repo:latest'
+                    sh 'docker build . -t arielma2304/my-repo:latest'
                 }
             }
         }
