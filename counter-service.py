@@ -16,4 +16,4 @@ if __name__ == '__main__':
 
 # add line for saving the counter in file
 # mount the file
-# crate new persistence_storage yaml file for k8s
+# crate new persistence_storage yaml file for k8s: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
