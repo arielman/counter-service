@@ -4,6 +4,7 @@ pipeline {
             stage('kubectl cred') {
                 steps {
                     withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'kube_config', namespace: '', serverUrl: '') {
+                        sh 'kubectl apply -f CD/namespace.yaml'
                         sh 'kubectl apply -f CD/deployment.yaml'
                         sh 'kubectl apply -f CD/service.yaml'
                     }
