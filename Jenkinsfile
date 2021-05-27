@@ -14,5 +14,13 @@ pipeline {
                     sh 'sudo docker build . -t arielma2304/my-repo:latest'
                 }
             }
+            stage('Push image to DockerHub') {
+                steps {
+                    withCredentials([usernamePassword(credentialsId: 'docker-hub', passwordVariable: 'dockerhub_pass', usernameVariable: 'dockerhub_user')]) {
+                        sh 'sudo docker login --username ${dockerhub_user} --password ${dockerhub_pass}'
+                        sh 'sudo docker push arielma2304/my-repo:latest'
+                    }    
+                }
+            }
         }
 }
