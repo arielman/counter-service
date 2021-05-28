@@ -14,6 +14,8 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True,port=80,host='0.0.0.0')
 
-# add line for saving the counter in file
-# mount the file
-# crate new persistence_storage yaml file for k8s: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+# Add line for saving the counter in file
+# Mount the file
+# Crate new persistence_storage yaml file for k8s: https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+# Using global won't work for anything but very small/debug deployments. A production webserver will use multiple processes, each with their own global variables.
+# We probably should use a Database or similar external data store to have one authorative location and value.
