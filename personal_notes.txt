@@ -1,0 +1,31 @@
+First step was to create EC2 instance for Deploying Cluster (with 3 workers node) using Terraform and EKS. I used this link as guideline:
+https://www.fairwinds.com/blog/terraform-and-eks-a-step-by-step-guide-to-deploying-your-first-cluster
+
+I had one issue which SO community helped me so solve:
+https://stackoverflow.com/questions/67654044/terraform-apply-invalidparameterexception-the-following-supplied-instance-types
+
+The files exists in terraform-eks-config folder.
+
+The next step was to create slim dockerfile (I used python:3.9.5-slim-buster) for running the python application and check I'm able to access it, and afterrwarf push the image to my docckerhub account.
+
+Once the above worked, I created new EC2 instance, and installed jenkins contianer on it. At the begining it was t3.micro	, but it worked too slowm so I've changed it to t3.xlarge.
+
+Then I created abother EC2 instance which was used for the the Jenkins slave.
+
+The next thing was to create CI job which connect to my github repo, download the code, and does docker build, tag, and push (for now I used tag per date and tine).
+
+The CD job applies the k8s yamls.
+
+The CI runs against the dev branch every minute to see if there was any commit/pusg (configured from jenkins job) and the CD runs against master branch.
+
+I crated prod namespace, and load balancer (the link in the postman is the load balancer public ip)
+
+This to improve:
+
+1. Secured jenkins
+2. Use a Database or similar external data store to have one authorative location and value.
+3. Use other functionality for tag
+4. Use webhook between the jenkins and github instead of Poll SCM Schedule
+5. Add comments for my changes
+6. Give better names
+7. Improve jenkins jobs
