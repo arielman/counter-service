@@ -11,7 +11,6 @@ https://stackoverflow.com/questions/67654044/terraform-apply-invalidparameterexc
 ![dockerhub](https://user-images.githubusercontent.com/26749472/120030838-a1adff80-c000-11eb-810d-1e7dd9b22e44.PNG)
 ![CD](https://user-images.githubusercontent.com/26749472/120059475-81ab2a00-c05a-11eb-94e9-d6587689669a.PNG)
 ![AWS_instances](https://user-images.githubusercontent.com/26749472/120081663-64607500-c0c7-11eb-8b09-2574d8ee1851.PNG)
-![Conatiner_content_example](https://user-images.githubusercontent.com/26749472/120081677-70e4cd80-c0c7-11eb-82b6-367ce5299051.PNG)
 ![jenkins_secrets](https://user-images.githubusercontent.com/26749472/120081687-7d692600-c0c7-11eb-9e89-1d3a9122e28a.PNG)
 ![jenkins_slave_log](https://user-images.githubusercontent.com/26749472/120081690-81954380-c0c7-11eb-8fc0-84ea016ddb1d.PNG)
 ![jenkins_container](https://user-images.githubusercontent.com/26749472/120081727-b30e0f00-c0c7-11eb-9efb-e4a8d51054fb.PNG)
