@@ -24,7 +24,7 @@ This to improve:
 
 1. Secured jenkins
 2. Use a Database or similar external data store to have one authorative location and value.
-3. Use other functionality for tag
+3. We shouldn't use the latest tag in the CD but the last tag we built in the CI
 4. Use webhook between the jenkins and github instead of Poll SCM Schedule
 5. Add comments for my changes
 6. Give better names
