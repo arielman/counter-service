@@ -12,13 +12,13 @@ Once the above worked, I created new EC2 instance, and installed jenkins contian
 
 Then I created abother EC2 instance which was used for the the Jenkins slave.
 
-The next thing was to create CI job which connect to my github repo, download the code, and does docker build, tag, and push (for now I used tag per date and tine).
+The next thing was to create CI job which connect to my github repo, download the code, and does docker build, tag, and push (for now I used tag per date and time).
 
 The CD job applies the k8s yamls.
 
 The CI runs against the dev branch every minute to see if there was any commit/pusg (configured from jenkins job) and the CD runs against master branch.
 
-I crated prod namespace, and load balancer (the link in the postman is the load balancer public ip)
+I created prod namespace, and load balancer (the link in the postman is the load balancer public ip)
 
 This to improve:
 
