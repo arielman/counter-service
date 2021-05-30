@@ -29,3 +29,4 @@ This to improve:
 5. Add comments for my changes
 6. Give better names
 7. Improve jenkins jobs
+8. Auto startup of jenkins container
