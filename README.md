@@ -37,12 +37,11 @@ mobaxtreme:
 
 aws cluster:
 
-![AWS_instances](https://user-images.githubusercontent.com/26749472/120239362-cc00f680-c266-11eb-8027-2a26dd5439c2.PNG)
+![cluster](https://user-images.githubusercontent.com/26749472/120239560-3b76e600-c267-11eb-9f28-12c758821a11.PNG)
 
 worker nodes in the cluster:
 
 ![worker_nodes](https://user-images.githubusercontent.com/26749472/120239328-b7bcf980-c266-11eb-874f-67e76cae1d21.PNG)
-
 
 kubectl_nodes:
 
