@@ -30,9 +30,19 @@ jenkins_slave_log:
 jenkins_container:
 
 ![jenkins_container](https://user-images.githubusercontent.com/26749472/120081727-b30e0f00-c0c7-11eb-9efb-e4a8d51054fb.PNG)
+
 mobaxtreme:
 
 ![mobaxtreme](https://user-images.githubusercontent.com/26749472/120081729-b4d7d280-c0c7-11eb-8dd9-69fa127f3658.PNG)
+
+aws cluster:
+
+![AWS_instances](https://user-images.githubusercontent.com/26749472/120239362-cc00f680-c266-11eb-8027-2a26dd5439c2.PNG)
+
+worker nodes in the cluster:
+
+![worker_nodes](https://user-images.githubusercontent.com/26749472/120239328-b7bcf980-c266-11eb-874f-67e76cae1d21.PNG)
+
 
 kubectl_nodes:
 
